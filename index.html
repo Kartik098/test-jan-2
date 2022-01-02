@@ -6,28 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <body>
-    <div class="full-image">
-        <img src="img (1).png"  alt="">
-        <span>X</span>
+    <div class="full-image" id="fullimgbox">
+        <img src="img (1).png"  id="fullimg">
+        <span onclick="closefullimg()">X</span>
     </div>
     
     <div class="img-gallery">
-        <img src="img (1).png" onclick="enlarge()" alt="">
-        <img src="img (1).jpg" alt="">
-        <img src="img (2).png" alt="">
-        <img src="img (2).jpg" alt="">
-        <img src="img (3).png" alt="">
-        <img src="img (3).jpg" alt="">
-        <img src="img (4).png" alt="">
-        <img src="img (4).jpg" alt="">
-        <img src="img (5).jpg" alt="">
-        <img src="img (5).png" alt="">
-        <img src="img (6).png" alt="">
-        <img src="img (7).png" alt="">
+        <img src="img (1).png" onclick="openfullimage()" alt="">
+        <img src="img (1).jpg" onclick="openfullimage()" alt="">
+        <img src="img (2).png" onclick="openfullimage()" alt="">
+        <img src="img (2).jpg" onclick="openfullimage()" alt="">
+        <img src="img (3).png" onclick="openfullimage()" alt="">
+        <img src="img (3).jpg" onclick="openfullimage()" alt="">
+        <img src="img (4).png" onclick="openfullimage()" alt="">
+        <img src="img (4).jpg" onclick="openfullimage()"  alt="">
+        <img src="img (5).jpg" onclick="openfullimage()" alt="">
+        <img src="img (5).png" onclick="openfullimage()" alt="">
+        <img src="img (6).png" onclick="openfullimage()" alt="">
+        <img src="img (7).png" onclick="openfullimage()" alt="">
     </div>
-    <script src="script.js"></script>
-</body>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox")
+
+        var fullimg = document.getElementById("fullimg")
+
+        function openfullimage() {
+        fullimgbox.style.display = "flex";
+    
+        }
+    </script>
+    </body>
 </html>
