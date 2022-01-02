@@ -16,27 +16,31 @@
     </div>
     
     <div class="img-gallery">
-        <img src="img (1).png" onclick="openfullimage()" alt="">
-        <img src="img (1).jpg" onclick="openfullimage()" alt="">
-        <img src="img (2).png" onclick="openfullimage()" alt="">
-        <img src="img (2).jpg" onclick="openfullimage()" alt="">
-        <img src="img (3).png" onclick="openfullimage()" alt="">
-        <img src="img (3).jpg" onclick="openfullimage()" alt="">
-        <img src="img (4).png" onclick="openfullimage()" alt="">
-        <img src="img (4).jpg" onclick="openfullimage()"  alt="">
-        <img src="img (5).jpg" onclick="openfullimage()" alt="">
-        <img src="img (5).png" onclick="openfullimage()" alt="">
-        <img src="img (6).png" onclick="openfullimage()" alt="">
-        <img src="img (7).png" onclick="openfullimage()" alt="">
+        <img src="img (1).png" onclick="openfullimage(this.src)" alt="">
+        <img src="img (1).jpg" onclick="openfullimage(this.src)" alt="">
+        <img src="img (2).png" onclick="openfullimage(this.src)" alt="">
+        <img src="img (2).jpg" onclick="openfullimage(this.src)" alt="">
+        <img src="img (3).png" onclick="openfullimage(this.src)" alt="">
+        <img src="img (3).jpg" onclick="openfullimage(this.src)" alt="">
+        <img src="img (4).png" onclick="openfullimage(this.src)" alt="">
+        <img src="img (4).jpg" onclick="openfullimage(this.src)"  alt="">
+        <img src="img (5).jpg" onclick="openfullimage(this.src)" alt="">
+        <img src="img (5).png" onclick="openfullimage(this.src)" alt="">
+        <img src="img (6).png" onclick="openfullimage(this.src)" alt="">
+        <img src="img (7).png" onclick="openfullimage(this.src)" alt="">
     </div>
     <script>
         var fullimgbox = document.getElementById("fullimgbox")
 
         var fullimg = document.getElementById("fullimg")
 
-        function openfullimage() {
+        function openfullimage(pic) {
         fullimgbox.style.display = "flex";
+        fullimg.src =pic;
     
+        }
+        function closefullimg(){
+            fullimgbox.style.display = "none";
         }
     </script>
     </body>
